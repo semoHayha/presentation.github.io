@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.0.2/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section style="top: 203.5px; display: block;" class="present">
+						<h1>Django</h1>
+						<h3>Industrial Training Presentation</h3>
+						<hr>
+						<p style="text-align: center; font-style: italic; font-size: .80em">
+							<i>Submitted<br>
+							In partial fulfillment<br>
+							For the award of the degree of</i><br>
+							<strong>Bachelor of Technology</strong>
+						</p>
+						<p style="text-align: center; font-weight: bold; font-size: .80em">In department of Computer Science and Engineering</p>
+					</section>
+					<section>
+						<img src="nitra_logo.jpg" style="border-radius: 50%;"> <br>
+						<p style="float: left; font-size: .7em;">
+							<strong>Supervisor:-</strong> <br>
+							Mr. A.P. Srivastava<br>
+							(Asst. Prof., CSE)
+						</p>
+						<p style="float: right; font-size: .7em;">
+							<strong>Submitted By:-</strong> <br>
+							Abhishek Tyagi <br>
+							1780210001
+						</p>
+
+						<br>
+						<br>
+						<br>
+
+						<hr>
+						<p style="text-align: center; font-size: .80em; font-weight: bold;">
+							Department of Computer Science and Engineering<br>
+							Nitra Technical Campus, Ghaziabad<br>
+							Dr. A.P.J Abdul Kalam Technical University, Lucknow<br>
+							AUGUST, 2020.<br>
+						</p>
+					</section>
+				</section>
+
+				<section style="top: 235px; display: block;" class="present">
+					<section>
+						<h2>Table Of Contents</h2>
+						<hr>
+					</section>
+					<section>
+						<h3>Django Introduction</h3>
+						<ul>
+							<li>Introduction</li>
+							<li>Features</li>
+							<li>Popularity</li>
+							<li>Project Structure</li>
+							<li>Django ORM</li>
+							<li>Views</li>
+							<li>Routes/Urls</li>
+							<li>Admin Panel</li>
+							<li>Templates</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Result (Project Screenshots)</h3>
+						<ul>
+							<li>Home Page</li>
+							<li>View By Category</li>
+							<li>Article View</li>
+							<li>View By Tags</li>
+							<li>Facebook Comments</li>
+							<li>Admin Page</li>
+						</ul>
+					</section>
+				</section>
+
+				<section style="top: 235px; display: block;" class="present">
+					<section>
+						<h3>Django Introduction</h3>
+						<hr>
+					</section>
+
+					<section>
+						<h3>Introduction</h3>
+						<hr>
+						<p style="text-align: center; font-size: .80em;">
+							Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+							Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus
+							on writing your app without needing to reinvent the wheel. It’s free and open source.
+						</p>
+					</section>
+
+					<section>
+						<h3>Features</h3>
+						<hr>
+						<ul>
+							<li>Rapid Development</li>
+							<li>Secure</li>
+							<li>Scalable</li>
+							<li>Fully Loaded</li>
+							<li>Versatile</li>
+							<li>Open Source</li>
+							<li>Vast and Supported Community</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Popularity</h3>
+						<hr>
+						<p style="font-size: .70em;">Django is widely accepted and used by various well-known sites such as:-</p>
+						<ul style="font-size: .70em;">
+							<li>Disqus</li>
+							<li>Instagram</li>
+							<li>Spotify</li>
+							<li>Youtube</li>
+							<li>The Washington Post</li>
+							<li>BitBucket</li>
+							<li>Mozilla</li>
+							<li>Pinterest</li>
+							<li>Quora</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Project Structure</h3>
+						<hr>
+						<img src="projectStructure.png" style="height: 500px;">
+					</section>
+
+					<section>
+						<h3>Django ORM</h3>
+						<hr>
+						<ul style="font-size: .7em">
+							<li>
+								The Django web framework includes a default object-relational mapping layer(ORM) that can be used
+								to interact with application data from relational databases such as SQLite, PostgreSQL and MYSQL.
+							</li>
+							<br>
+							<li>
+								While using django we do not have to worry about the database at all, after a little bit of configration
+								all you have to do is know your commands.
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Views</h3>
+						<hr>
+						<p style="font-size: .7em;">
+							A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response.
+							This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. 
+							Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.
+						</p>
+					</section>
+
+					<section>
+						<h3>Urls/Routes</h3>
+						<hr>
+						<p style="font-size: .7em;">
+							When a user makes a request for a page on your web app, Django controller takes over to look for the corresponding
+							view via the url.py file, and then return the HTML response or a 404 not found error, if not found. In url.py,
+							the most important thing is the "urlpatterns" tuple. It’s where you define the mapping between URLs and views.
+						</p>
+					</section>
+
+					<section>
+						<h3>Admin Panel</h3>
+						<hr>
+						<p style="font-size: .7em;">
+							Django provides a ready-to-use user interface for administrative activities.
+							We all know how an admin interface is important for a web project.
+							Django automatically generates admin UI based on your project models.
+						</p>
+					</section>
+
+					<section>
+						<h3>Templates</h3>
+						<hr>
+						<p style="font-size: .7em;">
+							Django makes it possible to separate python and HTML, the python goes in views and HTML goes in templates.
+							To link the two, Django relies on the render function and the Django Template language.
+							Django’s template engine offers a mini-language to define the user-facing layer of the application.
+						</p>
+					</section>
+				</section>
+
+				<section style="top: 235px; display: block;" class="present">
+					<section>
+						<h3>Result (Project ScreenShots)</h3>
+						<hr>
+					</section>
+
+					<section>
+						<h3>Homepage</h3>
+						<hr>
+						<img src="homepage.png">
+					</section>
+
+					<section>
+						<h3>Homepage</h3>
+						<hr>
+						<img src="homepage1.png">
+					</section>
+
+					<section>
+						<h3>View By Category</h3>
+						<hr>
+						<img src="categoryView.png">
+					</section>
+
+					<section>
+						<h3>Article View</h3>
+						<hr>
+						<img src="articleView.png">
+					</section>
+
+					<section>
+						<h3>View By Tags</h3>
+						<hr>
+						<img src="tagsView.png">
+					</section>
+
+					<section>
+						<h3>Facebook Comments</h3>
+						<hr>
+						<img src="facebookComments.png">
+					</section>
+
+					<section>
+						<h3>Admin Page</h3>
+						<hr>
+						<img src="Admin1.png">
+					</section>
+
+					<section>
+						<h3>Admin Page</h3>
+						<hr>
+						<img src="Admin2.png">
+					</section>
+
+					<section>
+						<h3>Admin Page</h3>
+						<hr>
+						<img src="Admin3.png">
+					</section>
+
+					<section>
+						<h3>Admin Page</h3>
+						<hr>
+						<img src="Admin4.png">
+					</section>
+
+					<section>
+						<h3>Admin Page</h3>
+						<hr>
+						<img src="Admin4.1.png">
+					</section>
+				</section>
+
+				<section>
+					<h1>Q & A</h1>
+					<hr>
+				</section>
+
+				<section>
+					<h1>Thank You!!!</h1>
+					<hr>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
